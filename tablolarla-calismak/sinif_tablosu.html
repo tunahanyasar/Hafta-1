@@ -1,105 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sınıf Tablosu</title>
+
+    <!-- th ve td etiketlerine genel özellikleri verildi -->
     <style>
-        th, td{
-            border: 1px solid black; padding: 15px; text-align: left;
-        }
-        th {
-            background-color: rgb(177, 225, 201);
-        }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 15px;
+        text-align: left;
+      }
+      th {
+        background-color: rgb(177, 225, 201);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Sınıf Tablosu</h1>
-    <table style="width: 100%; border: 1px solid black;">
-        <thead>
-            <tr>
-                <th>Öğrenci Numarası</th>
-                <th>Adı</th>
-                <th>Soyadı</th>
-                <th>Notu</th>
-                <th>Doğum Tarihi</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>744</td>
-                <td>Ahmet</td>
-                <td>Yılmaz</td>
-                <td>87</td>
-                <td>21-04-2000</td>
-            </tr>
-            <tr>
-                <td>543</td>
-                <td>Mehmet</td>
-                <td>Çelik</td>
-                <td>55</td>
-                <td>11-03-2002</td>
-            </tr>
-            <tr>
-                <td>264</td>
-                <td>Tunahan</td>
-                <td>Yaşar</td>
-                <td>80</td>
-                <td>14-01-2004</td>
-            </tr>
-            <tr>
-                <td>704</td>
-                <td>Yiğit</td>
-                <td>Demir</td>
-                <td>90</td>
-                <td>14-01-2000</td>
-            </tr>
-            <tr>
-                <td>153</td>
-                <td>Mete</td>
-                <td>Özdemir</td>
-                <td>95</td>
-                <td>24-11-2000</td>
-            </tr>
-            <tr>
-                <td>150</td>
-                <td>Ömer</td>
-                <td>Yalın</td>
-                <td>95</td>
-                <td>15-05-1998</td>
-            </tr>
-            <tr style="color: #0B830B;">
-                <td>151</td>
-                <td>Faruk</td>
-                <td>Özdemir</td>
-                <td>65</td>
-                <td>15-07-1999</td>
-            </tr>
-            <tr style="color: #0B830B;">
-                <td>152</td>
-                <td>Altay</td>
-                <td>Kaya</td>
-                <td>35</td>
-                <td>25-12-2001</td>
-            </tr>
-            
-            <tr style="color: #0B830B;">
-                <td>163</td>
-                <td>Ersin</td>
-                <td>Ceran</td>
-                <td>25</td>
-                <td>06-06-2004</td>
-            </tr>
-            <tr style="color: #0B830B;">
-                <td>745</td>
-                <td>Tahsin</td>
-                <td>Çelik</td>
-                <td>25</td>
-                <td>09-17-2000</td>
-            </tr>
-            
-            
-        </tbody>
+
+    <!-- TABLO OLUŞTURULDU -->
+    <table style="width: 100%; border: 1px solid black">
+      <!-- tablo başlığı oluşturuldu -->
+      <thead>
+        <tr>
+          <th>Öğrenci Numarası</th>
+          <th>Adı</th>
+          <th>Soyadı</th>
+          <th>Notu</th>
+          <th>Doğum Tarihi</th>
+          <!-- Sonradan doğum tarihi başlığı eklendi -->
+        </tr>
+      </thead>
+
+      <!-- tablo gövdesi oluşturuldu -->
+      <tbody>
+        <tr>
+          <td>744</td>
+          <td>Ahmet</td>
+          <td>Yılmaz</td>
+          <td>87</td>
+          <td>21-04-2000</td>
+        </tr>
+        <tr>
+          <td>543</td>
+          <td>Mehmet</td>
+          <td>Çelik</td>
+          <td>55</td>
+          <td>11-03-2002</td>
+        </tr>
+        <tr>
+          <td>264</td>
+          <td>Tunahan</td>
+          <td>Yaşar</td>
+          <td>80</td>
+          <td>14-01-2004</td>
+        </tr>
+        <tr>
+          <td>704</td>
+          <td>Yiğit</td>
+          <td>Demir</td>
+          <td>90</td>
+          <td>14-01-2000</td>
+        </tr>
+        <tr>
+          <td>153</td>
+          <td>Mete</td>
+          <td>Özdemir</td>
+          <td>95</td>
+          <td>24-11-2000</td>
+        </tr>
+        <tr>
+          <td>150</td>
+          <td>Ömer</td>
+          <td>Yalın</td>
+          <td>95</td>
+          <td>15-05-1998</td>
+        </tr>
+
+        <!-- Sonradan eklenen öğrenciler yeşil renk yapıldı -->
+        <tr style="color: #0b830b">
+          <td>151</td>
+          <td>Faruk</td>
+          <td>Özdemir</td>
+          <td>65</td>
+          <td>15-07-1999</td>
+        </tr>
+        <tr style="color: #0b830b">
+          <td>152</td>
+          <td>Altay</td>
+          <td>Kaya</td>
+          <td>35</td>
+          <td>25-12-2001</td>
+        </tr>
+
+        <tr style="color: #0b830b">
+          <td>163</td>
+          <td>Ersin</td>
+          <td>Ceran</td>
+          <td>25</td>
+          <td>06-06-2004</td>
+        </tr>
+        <tr style="color: #0b830b">
+          <td>745</td>
+          <td>Tahsin</td>
+          <td>Çelik</td>
+          <td>25</td>
+          <td>09-17-2000</td>
+        </tr>
+      </tbody>
     </table>
-</body>
+  </body>
 </html>
