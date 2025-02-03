@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaydol</title>
+  </head>
+
+  <body>
+    <!-- FORM Etiketi  -->
+    <!-- Action niteliği ile formun submit edilmesi sağlandı -->
+    <form action="/submit-form.html" method="get">
+      <!-- Fieldset ile formun alanı belirlendi -->
+      <fieldset style="width: 30%">
+        <!-- Fieldset için Başlık -->
+        <legend>Kayıt Formu</legend>
+
+        <!-- İsim Alanı -->
+        <div>
+          <label for="fname">İsim:</label>
+          <br />
+          <input type="text" name="fname" id="fname" required />
+        </div>
+
+        <!-- Soyisim Alanı -->
+        <div>
+          <label for="sname">Soysim:</label>
+          <br />
+          <input type="text" name="sname" id="sname" required />
+        </div>
+
+        <!-- Email Alanı -->
+        <div>
+          <label for="mail">E-Mail:</label>
+          <br />
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="ornek@gmail.com"
+            required
+          />
+        </div>
+
+        <!-- Şifre Alanı -->
+        <div>
+          <label for="passw">Şifre:</label>
+          <br />
+          <input
+            type="password"
+            name="passw"
+            id="passw"
+            placeholder="*******"
+            minlength="6"
+            required
+          />
+        </div>
+        <br />
+
+        <!-- Cinsiyet Seçimi -->
+        <div>
+          <label>Cinsiyet:</label>
+          <br />
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Erkek</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="">Kadın</label>
+        </div>
+        <br />
+
+        <!-- Bölgelere Göre Şehir Seçimi -->
+        <div>
+          <label for="city">Şehir:</label>
+          <select id="city">
+            <option value="">Seçiniz...</option>
+            <optgroup label="Marmara Bölgesi">
+              <option value="İstanbul">İstanbul</option>
+              <option value="Edirne">Edirne</option>
+              <option value="Tekirdağ">Tekirdağ</option>
+              <option value="Yalova">Yalova</option>
+              <option value="Kırklareli">Kırklareli</option>
+              <option value="İzmit">İzmit</option>
+            </optgroup>
+            <optgroup label="Ege Bölgesi">
+              <option value="İzmir">İzmir</option>
+              <option value="Manisa">Manisa</option>
+              <option value="Muğla">Muğla</option>
+              <option value="Denizli">Denizli</option>
+              <option value="Kütahya">Kütahya</option>
+              <option value="Aydın">Aydın</option>
+            </optgroup>
+            <optgroup label="Doğu Anadolu Bölgesi">
+              <option value="Kars">Kars</option>
+              <option value="Erzincan">Erzincan</option>
+              <option value="Ağrı">Ağrı</option>
+              <option value="Iğdır">Iğdır</option>
+              <option value="Bitlis">Bitlis</option>
+              <option value="Muş">Muş</option>
+            </optgroup>
+          </select>
+        </div>
+        <br />
+
+        <!-- Adres yazılması için text-area -->
+        <div>
+          <label for="address">Adres:</label>
+          <br />
+          <textarea id="address" rows="5" cols="30"></textarea>
+        </div>
+        <br />
+
+        <!-- Formu göndermek veya resetlemek için buton -->
+        <div>
+          <button type="submit">Kaydol</button>
+          <button type="reset">Sıfırla</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
