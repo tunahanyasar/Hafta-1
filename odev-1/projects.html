@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+
+    <!-- CSS KISMI -->
+    <style>
+      th,
+      td {
+        border: 1px solid black;
+        padding: 15px;
+        text-align: left;
+        background-color: rgb(173, 229, 210);
+      }
+      th {
+        background-color: beige;
+      }
+      body {
+        display: flex;
+        justify-content: center; /* Yatay olarak ortalar */
+        align-items: start; /* Dikey hizalamayı yukarıdan başlatır */
+        height: 100vh; /* Sayfanın tamamını kaplaması için */
+        margin: 0;
+      }
+      table {
+        margin-top: 5%; /* Yukarıdan boşluk bırakır */
+        border-collapse: collapse;
+        width: 50%; /* Opsiyonel: Tablo genişliği */
+        border: 2px solid black;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <!-- BODY KISMI -->
+  <body style="background-color: aliceblue">
+
+
+    <!-- PROJELEREİN Tablo İle Listelenmesi -->
+    <table style="border: 1px solid black" width="70%">
+      <thead>
+
+          <!-- Tablo Başlığı -->
+        <tr>
+          <th
+            colspan="5"
+            style="
+              text-align: center;
+              font-size: 20px;
+              background-color: rgb(151, 16, 16);
+              color: whitesmoke;
+            "
+          >PROJELER
+          </th>
+        </tr>
+
+        <!-- Tablo Başlıkları -->
+        <tr>
+          <th>Proje Adı</th>
+          <th>Kullanılan Teknolojiler</th>
+          <th>Süreç</th>
+          <th>Proje İçeriği</th>
+          <th>Ekler</th>
+        </tr>
+      </thead>
+
+
+      <!-- Tablo Verileri -->
+      <tbody>
+
+        <!-- Proje 1 -->
+        <tr>
+          <td>Park Mesafesini <br />Algılayan Araç Sensörü</td>
+          <td>Arduino UNO</td>
+          <td>Mikroişlemci dersim için 1 ay içerisinde yaptım.</td>
+          <td>
+            Ultrasonik mesafe sensörüyle algılanan hareketi “cm” cinsinden 7
+            segment display yardımıyla çıktı vererek uyarı ledleri yakan park
+            sensörü
+          </td>
+          <td>
+            <a href="./img/design2.png" target="_blank">Design1</a>
+            <a href="./img/design1.png" target="_blank">Design2</a>
+            <a href="./img/arduino2.jpg" target="_blank">Project-IMG1</a>
+            <a href="./img/arduino3.jpg" target="_blank">Project-IMG2</a>
+            <a href="./img/arduino1.jpg" target="_blank">Project-IMG3</a>
+          </td>
+        </tr>
+
+        <!-- Proje 2 -->
+        <tr>
+          <td>E-Ticaret Sitesi</td>
+          <td>ASP.Net MVC</td>
+          <td>2. Senemde bitirme projesi olarak sundum.</td>
+          <td>
+            El işi ve örgü ürünlerinin satıldığı, kayıt olma, sepete ekleme,
+            ürün listeleme ve sipariş verme dinamiklerinin gerçekleştirildiği
+            e-ticaret sitesi
+          </td>
+          <td>
+            <a href="./img/Homepage.png" target="_blank">Homepage</a><br />
+            <a href="./img/products.png" target="_blank">Products</a><br />
+            <a href="./img/register.png" target="_blank">Register</a><br />
+            <a href="./img/login.png" target="_blank">Login</a><br />
+            <a href="./img/admin-page.png " target="_blank">Adminpage</a><br />
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+  </body>
+</html>
